@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTAPI", "RESTAPI\RESTAPI.csproj", "{3889D817-6008-44F7-945F-D169B363B4EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{4520F213-A1A9-4617-B5BE-4530144B1833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{00F9DFFB-AD80-480A-A11B-5927591D90F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3889D817-6008-44F7-945F-D169B363B4EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3889D817-6008-44F7-945F-D169B363B4EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3889D817-6008-44F7-945F-D169B363B4EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3889D817-6008-44F7-945F-D169B363B4EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4520F213-A1A9-4617-B5BE-4530144B1833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4520F213-A1A9-4617-B5BE-4530144B1833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4520F213-A1A9-4617-B5BE-4530144B1833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4520F213-A1A9-4617-B5BE-4530144B1833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00F9DFFB-AD80-480A-A11B-5927591D90F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F9DFFB-AD80-480A-A11B-5927591D90F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F9DFFB-AD80-480A-A11B-5927591D90F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F9DFFB-AD80-480A-A11B-5927591D90F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {114160A4-E6A7-42DB-8B60-4CAB2452410C}
+	EndGlobalSection
+EndGlobal
