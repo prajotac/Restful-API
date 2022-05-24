@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using Entities.Data;
-using Services;
+using Services.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +15,7 @@ builder.Services.AddSingleton<IUserDatabaseSettings>(sp =>
 builder.Services.AddSingleton<IMongoClient>(s =>
         new MongoClient(builder.Configuration.GetValue<string>("UserDatabasesetting:ConnectionString")));
 
-builder.Services.AddSingleton<UserService>();
+builder.Services.AddSingleton<IUserService,UserService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

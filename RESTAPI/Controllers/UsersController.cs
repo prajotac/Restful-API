@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Entities.Models;
-using Services;
+using Services.Services;
 
 namespace RESTAPI.Controllers
 {
@@ -8,18 +8,18 @@ namespace RESTAPI.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly UserService _userService;
-        public UsersController(UserService userService)
+        private readonly IUserService _userService;
+        public UsersController(IUserService userService)
         {
             _userService = userService;
         }
 
-        #region API CRUD OPERATION
+        #region API OPERATION
         // POST api/<UsersController>
         [HttpPost]
         public ActionResult<User> Post([FromBody] User usr)
         {
-            var existinguser = _userService.ExistsUser(usr.Id);
+            var existinguser = _userService.IsUserExists(usr.Id);
             if (existinguser != null)
             {
                 return StatusCode(409, $"User '{usr.Id}' already exists.");

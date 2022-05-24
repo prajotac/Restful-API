@@ -2,8 +2,8 @@
 {
     public class GEO
     {
-        public string lat { get; set; } = string.Empty;
-        public string lng { get; set; } = string.Empty;
+        public string? lat { get; set; } 
+        public string? lng { get; set; }
 
     }
 }
